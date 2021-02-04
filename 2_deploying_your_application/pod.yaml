@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: crash-cart
+  labels:
+    app: crash-cart
+spec:
+  containers:
+    - name: crash-cart-container
+      image: centos:7
+      command: ['tail', '-f', '/dev/null']
